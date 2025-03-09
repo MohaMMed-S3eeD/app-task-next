@@ -1,6 +1,3 @@
-/* eslint-disable prettier/prettier */
-// eslint-disable-next-line prettier/prettier
-
 "use client";
 import {
   Navbar,
@@ -12,6 +9,7 @@ import {
   DropdownMenu,
   Avatar,
 } from "@heroui/react";
+
 import { ThemeSwitch } from "@/components/theme-switch";
 
 export const AcmeLogo = () => {

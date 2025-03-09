@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
 import clsx from "clsx";
-import Nav from "@/app/(component-me)/nav";
+
 import { Providers } from "./providers";
 
+import Nav from "@/components/(component-me)/nav";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 
@@ -32,12 +32,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en" className="light:bg-gray-100">
+    <html suppressHydrationWarning className="light:bg-gray-100" lang="en">
       <head />
       <body
         className={clsx(
           " bg-background light:bg-gray-100  font-sans antialiased min-h-screen",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

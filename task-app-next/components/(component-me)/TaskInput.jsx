@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import useTaskStore from "../store/taskStore";
+import useTaskStore from "../../app/store/taskStore";
 const TaskInput = () => {
   const [text, setText] = useState("");
   const { addTask } = useTaskStore();

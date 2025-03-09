@@ -1,8 +1,6 @@
-/* eslint-disable prettier/prettier */
-// eslint-disable-next-line prettier/prettier
 "use client";
 import { useState } from "react";
-import useTaskStore from "../store/taskStore";
+import useTaskStore from "../../app/store/taskStore";
 
 const TaskList = () => {
   const { tasks, removeTask, updateTask } = useTaskStore();
@@ -37,10 +35,9 @@ const TaskList = () => {
     <div className="space-y-3">
       {tasks.length === 0 ? (
         <p className="text-gray-500 dark:text-zinc-400 text-center select-none flex flex-col items-center gap-2">
-        <span className="text-2xl">📝</span>
-        No tasks yet
-      </p>
-      
+          <span className="text-2xl">📝</span>
+          No tasks yet
+        </p>
       ) : null}
       {tasks.map((task) => (
         <div
