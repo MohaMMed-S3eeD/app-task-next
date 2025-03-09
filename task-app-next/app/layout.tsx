@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 import { Providers } from "./providers";
 
-import Nav from "@/components/(component-me)/nav";
+import Nav from "@/app/(component-me)/nav";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 

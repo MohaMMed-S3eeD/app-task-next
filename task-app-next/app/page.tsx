@@ -1,5 +1,5 @@
-import TaskInput from "../components/(component-me)/TaskInput";
-import TaskList from "../components/(component-me)/TaskList";
+import TaskInput from "./(component-me)/TaskInput";
+import TaskList from "./(component-me)/TaskList";
 
 export default function Home() {
   return (

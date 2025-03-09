@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import useTaskStore from "../../app/store/taskStore";
+import useTaskStore from "../store/taskStore";
 
 const TaskList = () => {
   const { tasks, removeTask, updateTask } = useTaskStore();
@@ -65,11 +65,11 @@ const TaskList = () => {
             <input
               type="text"
               value={editedText}
-              onChange={(e) => setEditedText(e.target.value)}
-              onBlur={() => handleSaveEdit(task.id)}
-              onKeyDown={(e) => e.key === "Enter" && handleSaveEdit(task.id)}
               className="flex-1 bg-gray-50 dark:bg-zinc-800 text-gray-800 dark:text-white p-2 rounded-lg outline-none"
-              autoFocus
+              onKeyDown={(e) => e.key === "Enter" && handleSaveEdit(task.id)}
+              onBlur={() => handleSaveEdit(task.id)}
+              onChange={(e) => setEditedText(e.target.value)}
+              
             />
           ) : (
             <span

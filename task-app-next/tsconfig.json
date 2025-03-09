@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/(component-me)/TaskInput.jsx"
+    "app/(component-me)/TaskInput.jsx"
   ],
   "exclude": ["node_modules"]
 }
